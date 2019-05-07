@@ -1,0 +1,50 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<style type="text/css"></style>
+</head>
+
+<body>
+<h1>!function!確認</h1>
+<p>
+以下の内容で!function!します。
+よろしいですか？
+</p>
+<form action="!option!.php" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="mode" value="send">
+		<table>
+			<tr>
+				<td>名前:</td><td>!name!</td>
+			</tr><tr>
+				<td>フリガナ:</td><td>!kana!</td>
+			</tr><tr>
+				<td>生年月日:</td><td>!birthday!</td>
+			</tr><tr>
+				<td>性別:</td><td>!gender2!</td>
+			</tr><tr>
+				<td>郵便番号:</td><td>!postal_code!</td>
+			</tr><tr>
+				<td>住所:</td><td>!address!</td>
+			</tr><tr>
+				<td>電話番号:</td><td>!phone!</td>
+			</tr><tr>
+				<td>コース:</td><td>!c_id2!</td>
+			</tr><tr>
+				<td>予約日:</td><td>!reserve2!</td>
+			</tr>
+		</table>
+	<input type="submit" name="send" value="はい">
+	<input type="hidden" name="name" value=!name!>
+	<input type="hidden" name="kana" value=!kana!>
+	<input type="hidden" name="birthday" value=!birthday!>
+	<input type="hidden" name="gender" value=!gender!>
+	<input type="hidden" name="postal_code" value=!postal_code!>
+	<input type="hidden" name="address" value=!address!>
+	<input type="hidden" name="phone" value=!phone!>
+	<input type="hidden" name="c_id" value=!c_id!>
+	<input type="hidden" name="reserve" value=!reserve!>
+</form>
+<a href="top.php">戻る</a>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登録ページ</title>
+</head>
+
+<body>
+  <a href="../php/top.php">トップへ戻る</a>
+  <h1>登録ページです</h1>
+  <form action="check.php" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="mode" value="post">
+  <table>
+  <tr>
+    <td>名前:</td><td><input type="text" name="name" size="35"></td>
+  </tr><tr>
+    <td>フリガナ:</td><td><input type="text" name="kana" size="35"></td>
+  </tr><tr>
+    <td>生年月日:</td><td><input type="text" name="birthday" size="35"></td>
+  </tr><tr>
+    <td>性別:</td>
+    <td>
+      <input type="radio" name="gender" value="M">男性
+      <input type="radio" name="gender" value="F">女性
+    </td>
+  </tr><tr>
+    <td>電話番号:</td><td><input type="text" name="phone" size="35"></td>
+  </tr><tr>
+    <td>郵便番号:</td><td><input type="text" name="postal_code" size="35"></td>
+  </tr><tr>
+    <td>住所:</td><td><input type="text" name="address" size="35"></td>
+  </tr><tr>
+    <td>コース:</td>
+    <td>
+      <select name="c_id">
+        <option value="a">入門コース</option>
+        <option value="b">ビジネスコース</option>
+        <option value="c">エキスパートコース</option>
+      </select>
+    </td>
+  </tr><tr>
+    <td>予約日:</td>
+    <td>
+      <select name="reserve">
+        <option value="Sun">日曜日</option>
+        <option value="Mon">月曜日</option>
+        <option value="Tue">火曜日</option>
+        <option value="Wed">水曜日</option>
+        <option value="Thu">木曜日</option>
+        <option value="Fri">金曜日</option>
+        <option value="Sat">土曜日</option>
+      </select>
+    </td>
+  </tr>
+  </table>
+  <input type="submit" name="send" value="送信">
+  </form>
+</body>
+</html>
